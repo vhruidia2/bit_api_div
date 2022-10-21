@@ -13,7 +13,7 @@ app.get('/api', (req, res) => {
 
 app.get('/division/:num1/:num2', (req, res) => {
 
-    if( parseInt(req.params.num1)===0 || parseInt(req.params.num2)===0){
+    if(parseInt(req.params.num2)===0){
     
         return res.status(400).json({message:"No se puede dividir entre 0"})
     } else {
